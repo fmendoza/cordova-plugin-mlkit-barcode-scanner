@@ -15,7 +15,7 @@ var MLKitBarcodeScanner = {
 
   scan: function (options, successCallback, errorCallback) {
 
-    options.barcodeFormats = getBarcodeFormatFlags(barcodeFormats);
+    options.barcodeFormats = getBarcodeFormatFlags(options.barcodeFormats);
 
     exec(successCallback, errorCallback,
       'cordova-plugin-mlkit-barcode-scanner',
